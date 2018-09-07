@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>De pizzaboer!</h1>
+
+
+</body>
+	<script>
+	//Rogier van der Gaag
+	//applicatie- en media ontwikkelaar
+
+
+	//de prijzen van de pizza's
+		const pizzaSmall = 6;
+		const pizzaMedium = 8;
+		const pizzaLarge = 10;
+
+	//de achtergrond kleur
+		document.body.style.backgroundColor = 'grey'
+	//een alert message
+		alert("U kunt hier uw pizza bestellen!")
+	//een alert message met de prijzen erbij
+		alert("Een Small pizza kost €6, een medium pizza kost €8 en een large pizza kost €10!")
+	//een prompt waar je de grootte van de pizza kunt selecteren
+		var Pizzagrootte = prompt("wat voor grote voor de pizza wilt u hebben? We hebben small, medium en large!")
+	//een prompt waaar je de hoeveelheid van de pizza's kunt kiezen
+		var Hoeveelheid = prompt("hoeveel pizza's wilt u bestellen.")
+
+	
+	//Rekent de prijs uit door de prijs van de small pizza keer de hoeveelheid pizza's te doen
+		if (Pizzagrootte == "small") {
+
+			document.write("De prijs voor de" + ' ' + Hoeveelheid + ' ' + "small pizza('s) is:" + ' ' + '&euro;' + pizzaSmall*Hoeveelheid);
+	//Rekent de prijs uit door de prijs van de medium pizza keer de hoeveelheid pizza's te doen
+		} else if (Pizzagrootte == 'medium') {
+
+			document.write("De prijs voor de" + ' ' + Hoeveelheid + ' ' + "Medium pizza('s) is:" + ' ' + '&euro;' + pizzaMedium*Hoeveelheid);
+	//Rekent de prijs uit door de prijs van de large pizza keer de hoeveelheid pizza's te doen
+		} else if (Pizzagrootte == 'large') {
+
+			document.write("De prijs voor de" + ' ' + Hoeveelheid + ' ' + "large pizza('s) is:" + ' ' + '&euro;' + pizzaLarge*Hoeveelheid);
+		} else {
+	//als de grootte van de pizza verkeerd word ingevoerd daan laat die een warning in de document zien
+			document.write("Verkeerde gegevens ingevoerd!");
+		}
+
+
+
+	</script>
+
+</html>
